@@ -1,0 +1,3 @@
+[.config/bash/oh-my-git.git]
+checkout = git clone 'https://github.com/arialdomartini/oh-my-git.git' 'oh-my-git.git'
+

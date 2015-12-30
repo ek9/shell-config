@@ -1,0 +1,2 @@
+[$HOME/.config/vcsh/repo.d/dotfiles-Xorg.git]
+checkout = vcsh clone file:///srv/git/nomadsys/dotfiles-Xorg dotfiles-Xorg

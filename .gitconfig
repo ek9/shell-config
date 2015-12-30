@@ -1,0 +1,23 @@
+[user]
+    name = Your name
+    email = "(none)"
+[push]
+    default = simple
+[alias]
+    wdiff = diff --color-words
+    lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[log]
+    abbrevCommit = true
+    date = iso
+[merge]
+    conflictstyle = diff3
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+[git-up "bundler"]
+	check = true
+[git-up "fetch"]
+	prune = true
+
