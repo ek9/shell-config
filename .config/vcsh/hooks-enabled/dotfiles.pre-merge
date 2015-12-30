@@ -1,5 +1,4 @@
 #!/bin/sh
-echo "I AM A HOOK"
 # This code does amost exactly what the native vcsh sanity checking code
 # does except that on finding a potential merge conflict, it moves existing
 # files out of the way temporarily. Merging (part of `vcsh clone`) happens
