@@ -1,2 +1,2 @@
 [var/github/deploy.git]
-checkout = git clone 'https://github.com/visionmedia/deploy.git' 'deploy.git'
+checkout = git clone 'https://github.com/visionmedia/deploy.git' 'deploy.git' && cd ~/.local/bin && ln -sf ../../var/github/deploy.git/bin/deploy
