@@ -3,6 +3,8 @@ alias grep='grep --color=auto'
 alias less='less -R'
 alias dmesg='dmesg -PHL'
 alias ls='ls --color=auto --group-directories-first --human-readable -x -v'
+alias pkg-update='sudo etckeeper pre-install && sudo pacman -Syu && sudo
+etckeeper post-install'
 
 command -v colordiff >/dev/null && alias diff='colordiff'
 
