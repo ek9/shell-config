@@ -23,13 +23,13 @@
 !/.config/mr/available.d/2*
 !/.config/mr/available.d/3*
 !/.config/mr/available.d/4*
-!/.config/mr/available.d/dotfiles*
+!/.config/mr/available.d/dotfiles.git
 !/.config/mr/config.d
 !/.config/mr/config.d/0*
 !/.config/mr/config.d/1*
 !/.config/mr/config.d/2*
 !/.config/mr/config.d/4*
-!/.config/mr/config.d/dotfiles*
+!/.config/mr/config.d/dotfiles.git
 !/.config/tmux
 !/.config/tmux/plugins
 !/.config/tmux/plugins/.gitkeep
