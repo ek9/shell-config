@@ -41,8 +41,6 @@
 !/.local/bin/backup-system.sh
 !/.local/bin/chmod-dirs.sh
 !/.local/bin/chmod-files.sh
-!/.local/bin/monitor-setup.sh
-!/.local/bin/pdf-repair.sh
 !/.local/bin/random-pass.sh
 !/.local/bin/reflector-fetch.sh
 !/.mrconfig
