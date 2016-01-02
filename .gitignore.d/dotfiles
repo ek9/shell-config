@@ -51,3 +51,5 @@
 !/.vagrant.d
 !/.vagrant.d/Vagrantfile
 !/.vimrc
+!/.vim/spell
+!/.vim/bundle
