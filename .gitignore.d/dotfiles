@@ -23,7 +23,7 @@
 !/.config/mr/available.d/2*
 !/.config/mr/available.d/3*
 !/.config/mr/available.d/4*
-!/.config/mr/available.d/dotfiles.git
+!/.config/mr/available.d/dotfiles*.git
 !/.config/mr/config.d
 !/.config/mr/config.d/0*
 !/.config/mr/config.d/1*
