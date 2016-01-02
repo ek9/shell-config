@@ -43,6 +43,11 @@ Bundle 'tpope/vim-surround'
 Bundle 'ntpeters/vim-better-whitespace'
 " Alignment and filtering via :Tab
 Bundle 'godlygeek/tabular'
+" Better support PKGBUILD files (archlinux)
+Bundle 'Firef0x/PKGBUILD.vim'
+
+" vim css3 support
+Bundle 'hail2u/vim-css3-syntax'
 
 "" SALT
 " faster yaml syntx highlight
