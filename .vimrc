@@ -9,6 +9,24 @@ filetype plugin indent on
 Bundle 'gmarik/vundle'
 
 "" BUNDLES
+
+"" CORE
+Bundle 'tpope/vim-sensible'
+Bundle 'file:///srv/git/nomadsys/vim-config'
+Bundle 'scrooloose/nerdtree'
+Bundle 'sjl/gundo.vim'
+
+
+"" THEMING
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'file:///srv/git/nomadsys/vim-auto-solarize'
+
+"" STATUSBAR
+Bundle 'itchyny/lightline.vim'
+"Bundle 'mkitt/tabline.vim'
+Bundle 'kien/tabman.vim'
+
+
 "" DEV
 " git wrapper
 Bundle 'tpope/vim-fugitive'
@@ -45,21 +63,6 @@ Bundle 'saltstack/salt-vim'
 " symfony framework
 "Bundle 'evidens/vim-twig'
 "Bundle 'docteurklein/vim-symfony'
-
-"" THEMING
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'file:///srv/git/nomadsys/vim-auto-solarize'
-
-"" STATUSBAR
-Bundle 'itchyny/lightline.vim'
-"Bundle 'mkitt/tabline.vim'
-Bundle 'kien/tabman.vim'
-
-"" CORE
-Bundle 'tpope/vim-sensible'
-Bundle 'file:///srv/git/nomadsys/vim-config'
-Bundle 'scrooloose/nerdtree'
-Bundle 'sjl/gundo.vim'
 
 au BufNewFile,BufRead *.yaml,*.yml,*.sls so ~/.vim/bundle/vim-yaml/after/ftplugin/yaml.vim
 set expandtab
