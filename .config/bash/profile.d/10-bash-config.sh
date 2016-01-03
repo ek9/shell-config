@@ -6,10 +6,11 @@
 #   not be saved.
 # - A value of ignoreboth is shorthand for ignorespace and ignoredups.
 # - A value of erasedups causes all previous lines matching the current line to
-#   be removed from the history list before that line is saved. 
+#   be removed from the history list before that line is saved.
 # Any value is ignored.
 
 export HISTCONTROL=ignorespace:erasedups
 export HISTSIZE=2000
-export HISTFILE=~/.config/bash/history
+# do not store bash history across reboots
+export HISTFILE=/tmp/bash/history
 
