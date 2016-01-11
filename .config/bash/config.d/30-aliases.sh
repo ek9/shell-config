@@ -11,9 +11,6 @@ ip2loc() {
     echo geoiplookup $1 | awk -F' ' '{gsub(/,/,""); print $4}'
 }
 
-
-
-
 command -v colordiff >/dev/null && alias diff='colordiff'
 
 # cp and mv replace with vcp and vmv (if exists)

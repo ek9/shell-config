@@ -2,4 +2,5 @@
 # insall packages for user instead of system. Reason for this is that system
 # packages are most likely managed by your distributions package manager
 gem: --no-document --user-install
-
+install: --no-document
+update: --no-document

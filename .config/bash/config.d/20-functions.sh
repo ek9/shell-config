@@ -34,7 +34,7 @@ function git-ignore-untracked() {
     echo "$(git status --porcelain | grep '^??' | cut -c4-)" >>.gitignore
 }
 
-if [ -f "$(command -v pacman)" ] && [ -f "$(command -v etckeeper)" ]; then
+if [[ -x "$(command -v pacman)" ]] && [[ -x "$(command -v etckeeper)" ]]; then
     function pacman
     {
         sudo etckeeper pre-install

@@ -1,4 +1,0 @@
-[var/cache/mr/deploy.git]
-checkout = git clone 'https://github.com/visionmedia/deploy.git' 'deploy.git' &&
-    cd ~/.local/bin
-    ln -sf ../../var/cache/mr/deploy.git/bin/deploy .

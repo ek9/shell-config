@@ -1,2 +1,32 @@
+[.config/tmux/plugins/tpm]
+checkout = git clone 'https://github.com/tmux-plugins/tpm.git'
+
+[.vim/bundle/vundle]
+checkout = git clone 'https://github.com/gmarik/vundle.git' 'vundle'
+
+[.config/mr/repo.d/dircolors-solarized]
+checkout = git clone https://github.com/seebi/dircolors-solarized &&
+    cd ~/.config
+    ln -sf ../.config/mr/repo.d/dircolors-solarized/dircolors.256dark dir_colors
+
+[.config/mr/repo.d/base16-shell]
+checkout = git clone 'https://github.com/chriskempson/base16-shell.git'
+
+[.config/mr/repo.d/liquidprompt]
+checkout = git clone file:///srv/git/nomadsys/liquidprompt &&
+	cd liquidprompt &&
+    git checkout base
+
+[.config/mr/repo.d/oh-my-git]
+checkout = git clone file:///srv/git/nomadsys/oh-my-git &&
+	cd oh-my-git &&
+    git checkout base
+
+[.config/mr/repo.d/deploy]
+checkout = git clone 'https://github.com/visionmedia/deploy.git' &&
+    cd ~/.local/bin
+    ln -sf ../../.config/mr/repo.d/deploy/bin/deploy .
+
 [$HOME/.config/vcsh/repo.d/dotfiles.git]
 checkout = vcsh clone file:///srv/git/nomadsys/dotfiles dotfiles
+

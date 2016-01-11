@@ -1,4 +1,6 @@
-LIQUIDPROMPT_DIR=~/var/cache/mr/liquidprompt.git
+LIQUIDPROMPT_DIR=$HOME/.config/mr/repo.d/liquidprompt
+OHMYGIT_DIR=$HOME/.config/mr/repo.d/oh-my-git
+
 if [[ -f "$LIQUIDPROMPT_DIR/liquidprompt" ]]; then
 
     if [[ -z $DISPLAY ]]; then
@@ -22,10 +24,9 @@ if [[ -f "$LIQUIDPROMPT_DIR/liquidprompt" ]]; then
         : ${omg_has_stashes_symbol:=' '}
     fi
 
-    OHMYGIT_DIR=~/var/cache/mr/oh-my-git.git
     if  [[ -f "$OHMYGIT_DIR/prompt.sh" ]]; then
         omg_liquidprompt=1
-        source $HOME/var/cache/mr/oh-my-git.git/prompt.sh
+        source $OHMYGIT_DIR/prompt.sh
     fi
 
     LP_ENABLE_OHMYGIT=1
