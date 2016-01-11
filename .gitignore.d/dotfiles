@@ -42,8 +42,12 @@
 !/.local/bin/backup-system.sh
 !/.local/bin/chmod-dirs.sh
 !/.local/bin/chmod-files.sh
+!/.local/bin/imguralbum.py
+!/.local/bin/mr
 !/.local/bin/random-pass.sh
 !/.local/bin/reflector-fetch.sh
+!/.local/bin/sysinfo
+!/.local/bin/vcsh
 !/.mrconfig
 !/.profile
 !/.taskrc
