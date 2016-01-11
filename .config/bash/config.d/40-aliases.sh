@@ -6,6 +6,14 @@ alias ls='ls --color=auto --group-directories-first --human-readable -x -v'
 alias pkg-update='sudo etckeeper pre-install && sudo pacman -Syu && sudo
 etckeeper post-install'
 
+alias IP='dig myip.opendns.com @resolver1.opendns.com +short'
+ip2loc() {
+    echo geoiplookup $1 | awk -F' ' '{gsub(/,/,""); print $4}'
+}
+
+
+
+
 command -v colordiff >/dev/null && alias diff='colordiff'
 
 # cp and mv replace with vcp and vmv (if exists)
@@ -30,3 +38,4 @@ if [ -f "/etc/debian_version" ]; then
     alias apt-get='sudo apt-get'
 fi
 
+alias upt="uptime | sed 's/.*up \(.*\),.*user.*/\1/'"

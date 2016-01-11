@@ -2,6 +2,9 @@
 # ~/.bash_profile
 # This file is executed when an interactive login bash shell is invoked
 
+# always source ~/.profile
+[[ -f ~/.profile ]] && . ~/.profile
+
 # Load profiles from $HOME/.config/bash/profile.d
 if test -d $HOME/.config/bash/profile.d/; then
 	for profile in $HOME/.config/bash/profile.d/*.sh; do

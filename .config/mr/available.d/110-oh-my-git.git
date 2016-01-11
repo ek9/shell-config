@@ -1,0 +1,4 @@
+[var/cache/mr/oh-my-git.git]
+checkout = git clone file:///srv/git/nomadsys/oh-my-git 'oh-my-git.git' &&
+	cd oh-my-git.git &&
+    git checkout base

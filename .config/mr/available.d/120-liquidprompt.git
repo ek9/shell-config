@@ -1,0 +1,4 @@
+[var/cache/mr/liquidprompt.git]
+checkout = git clone file:///srv/git/nomadsys/liquidprompt 'liquidprompt.git' &&
+	cd liquidprompt.git &&
+    git checkout base

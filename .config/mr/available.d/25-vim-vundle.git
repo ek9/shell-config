@@ -1,2 +1,0 @@
-[.vim/bundle/vundle]
-checkout = git clone 'https://github.com/gmarik/vundle.git' 'vundle'
