@@ -1,0 +1,12 @@
+# ~/.tmuxinator/quaketermite.yml
+name: quaketermite
+root: ~/
+
+windows:
+  - syslog:
+      layout: main-vertical
+      panes:
+        - sudo journalctl -f
+        #- echo tail -f .local/share/xorg/Xorg.0.log
+  - root: sudo su -
+

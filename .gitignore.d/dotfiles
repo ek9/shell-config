@@ -52,6 +52,8 @@
 !/.profile
 !/.taskrc
 !/.tmux.conf
+!/.tmuxinator
+!/.tmuxinator/*
 !/.vagrant.d
 !/.vagrant.d/Vagrantfile
 !/.vimrc
