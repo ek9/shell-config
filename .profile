@@ -1,4 +1,4 @@
-echo "~/.profile is run"
+#echo "~/.profile is run"
 
 # --- local bin {{{
 HOMEBIN="$HOME/.local/bin"
