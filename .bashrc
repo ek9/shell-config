@@ -1,19 +1,16 @@
-#
-# ~/.bashrc
-# This file is executed when an interactive non-login bash shell is invoked
+#!/usr/bin/env bash
+## ek9/dotfiles - https://github.com/ek9/dotfiles
+## .bashrc
+## This file is executed by interactive non-login bash shell
 
-# If not running interactively, don't do anything
+# if not running interactively - don't do anything
 [[ $- != *i* ]] && return
 
-#echo "~/.bashrc"
-
-#echo ".config/bash/config.d/*"
-
-# Load config files from $HOME/.config/bash/config.d
-if test -d $HOME/.config/bash/config.d/; then
-	for config in $HOME/.config/bash/config.d/*.sh; do
-		test -r "$config" && . "$config"
+# load bash config files from $HOME/.config/bash/config.d
+if test -d "$HOME/.config/bash/config.d/"; then
+	for bash_config in $HOME/.config/bash/config.d/*.sh; do
+		test -r "$bash_config" && . "$bash_config"
 	done
-	unset config
+	unset bash_config
 fi
 
