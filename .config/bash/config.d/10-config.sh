@@ -1,3 +1,8 @@
+#!/usr/bin/env bash
+## ek9/dotfiles - https://github.com/ek9/dotfiles
+## 10-config.sh
+## bash shell customization
+
 ### options {{{
 shopt -s autocd         # change to named directory
 #shopt -s cdable_vars    # if cd arg is not valid, assumes its a var defining a dir
