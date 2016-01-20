@@ -1,22 +1,32 @@
-alias in='task add +in'
-
-tickle () {
-    deadline=$1
-    shift
-    task add \+in \+tickle wait:$deadline $@
+#!/usr/bin/env bash
+## ek9/dotfiles - https://github.com/ek9/dotfiles
+## 32-taskwarrior.sh
+## Taskwarrior aliases / functions
+tickle() {
+    if [[ "$1" =~ ^-?[0-9]+$ ]]; then
+        # first argument is number - modify task
+         task=$1; shift; due=$1; shift; task $task mod wait:$due gtd:tickler $@
+    else
+        # add new task
+        dl=$1; shift; task add $@ gtd:tickler wait:$dl
+    fi
 }
-alias tick='tickle'
-alias think='tickle +1d'
-
-alias rnd='task add +rnd +next +@computer +@online'
-
-
-read_and_review (){
-    link="$1"
-    descr="\"Read and review: $link\""
-    id=$(task add \+next \+rnr "$descr" | sed -n 's/Created task \(.*\)./\1/p')
-    task "$id" annotate "$link"
+delay() {
+    if [ -z "$1" ] || [ -z "$2" ]; then
+        echo "arguments: <FILTER> <TIME_AMOUNT>"
+        echo "Tickle FILTERED tasks for TIME_AMOUNT"
+    else
+        task=$1; shift; wait=$1; shift;
+        task $task mod wait:$wait gtd:tickler
+    fi
 }
-
-alias rnr=read_and_review
-
+someday() {
+    [ ! -z "$1" ] && task add $@ gtd:someday eait:someday
+}
+alias in='task add gtd:inbox'
+alias afk='task add gtd:inbox +afk'
+alias tick="tickle"
+alias think="tickle +1d"
+alias learn="someday +learn"
+alias tread="someday +read"
+alias research="someday +reseach"
