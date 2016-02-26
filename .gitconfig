@@ -1,23 +1,29 @@
-[user]
-    name = Your name
-    email = "(none)"
 [push]
     default = simple
 [alias]
-    wdiff = diff --color-words
+    a = add
+    bp = remote prune origin
+    c = commit
+    co = checkout
+    cb = checkout -b
+    rb = rebase
+    rbc = rebase --continue
+    rh = reset HEAD
     lg = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    merge = merge --no-ff
+    up = pull --rebase --autostash
+    wdiff = diff --color-words
+    fcom = GIT_AUTHOR_DATE=$GIT_DATE GIT_COMMITTER_DATE=$GIT_DATE git commit
 [log]
     abbrevCommit = true
     date = iso
 [merge]
     conflictstyle = diff3
 [color]
-    ui = auto
-    diff = auto
-    status = auto
-    branch = auto
-[git-up "bundler"]
-	check = true
-[git-up "fetch"]
-	prune = true
+    ui = always
+    diff = always
+    status = always
+    branch = always
 
+[rerere]
+	enabled = 1
