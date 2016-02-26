@@ -50,6 +50,7 @@
 !/.local/bin/vcsh
 !/.mrconfig
 !/.profile
+!/.rvmrc
 !/.taskrc
 !/.tmux.conf
 !/.tmuxinator
