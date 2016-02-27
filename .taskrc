@@ -1,13 +1,45 @@
+## ek9/dotfiles - https://github.com/ek9/dotfiles
+## .taskrc
+## Taskwarrior config
+
+## config
+#########
+
+# general
 data.location=~/var/tasks
 editor=vim
 
-# inbox (tag:in)
-urgency.user.tag.in.coefficient=15.0
-report.in.columns           = id,description
-report.in.description       = Inbox
-report.in.filter            = status:pending limit:page (+in)
-report.in.labels            = ID,Description
-# Color theme (uncomment one to use)
+# UDA priority
+uda.priority.label=Priority
+uda.priority.type=string
+uda.priority.values=H,M,,L
+
+# UDA priority urgency coefficients
+urgency.uda.priority.H.coefficient=6.0
+urgency.uda.priority.L.coefficient=1.8
+urgency.uda.priority.M.coefficient=3.9
+
+# UDA GTD
+uda.gtd.label=GTD
+uda.gtd.type=string
+uda.gtd.values=inbox,next,someday,tickler
+uda.gtd.default=inbox
+
+# UDA GTD urgency coefficients
+urgency.uda.gtd.inbox.coefficient=-1.0
+urgency.uda.gtd.next.coefficient=8.0
+urgency.uda.gtd.someday.coefficient=-5.0
+urgency.uda.gtd.tickler.coefficient=10.0
+
+# next tag coefficient
+urgency.user.tag.next.coefficient=-1.0
+
+## colors
+#########
+
+color=on
+# color theme
+include ~/.config/task/darkred256.theme
 #include /usr/share/doc/task/rc/light-16.theme
 #include /usr/share/doc/task/rc/light-256.theme
 #include /usr/share/doc/task/rc/dark-16.theme
@@ -19,7 +51,49 @@ report.in.labels            = ID,Description
 #include /usr/share/doc/task/rc/dark-yellow-green.theme
 #include /usr/share/doc/task/rc/dark-gray-256.theme
 #include /usr/share/doc/task/rc/dark-gray-blue-256.theme
-include /usr/share/doc/task/rc/solarized-dark-256.theme
+#include /usr/share/doc/task/rc/solarized-dark-256.theme
 #include /usr/share/doc/task/rc/solarized-light-256.theme
 #include /usr/share/doc/task/rc/no-color.theme
 
+# priority colors
+color.uda.priority.H=color255
+color.uda.priority.L=color245
+color.uda.priority.M=color250
+
+## GTD
+######
+
+# in (inbox) tag urgency coefficient
+urgency.user.tag.in.coefficient=-10.0
+
+# in (inbox) report
+report.in.columns           = id,entry.age,project,gtd,tags,description
+report.in.description       = Inbox
+report.in.filter            = status:pending limit:page (+in)
+report.in.labels            = ID,Age,Project,GTD,Tag,Description
+
+# next tag (next action lists)
+report.next.columns         = id,start.age,entry.age,depends,priority,project,gtd,tags,recur,scheduled.countdown,due.relative,until.remaining,description,urgency
+report.next.description     = Next Action List
+report.next.filter          = status:pending limit:page (-in)
+report.next.labels          = ID,Active,Age,Deps,P,Project,GTD,Tag,Recur,S,Due,Until,Description,Urg
+report.next.sort            = urgency-
+
+# waiting (someday-maybe lists)
+report.waiting.columns      = id,start.active,entry.age,depends.indicator,priority,project,gtd,tags,recur.indicator,wait,wait.remaining,scheduled,due,until
+report.waiting.description  = Waiting (hidden) tasks
+report.waiting.filter		= +WAITING
+report.waiting.labels		= ID,A,Age,D,P,Project,GTD,Tags,R,Wait,Remaining,Sched,Due,Until,Description
+report.waiting.sort			= due+,wait+,entry+
+
+# list (detailed task list)
+report.list.columns			= id,start.age,entry.age,depends.indicator,priority,project,gtd,description,tags,recur.indicator,scheduled.countdown,due,until.remaining,urgency
+report.list.description		= Detailed task list
+report.list.filter			= status:pending
+report.list.labels			= ID,Active,Age,D,P,Project,GTD,Description,Tags,R,Sch,Due,Until,Urg
+report.list.sort			= start-,due+,project+,urgency-
+
+# contexts
+context.lbs=project:lbs
+context.ops=+ops
+context.ek9=project:ek9
