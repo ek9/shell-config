@@ -1,6 +1,6 @@
 ## ek9/dotfiles - https://github.com/ek9/dotfiles
 ## .profile
-## This file sets up shell environment
+## This file sets up shell environment for the shell
 
 # enable local bin dir
 HOMEBIN="$HOME/.local/bin"
@@ -58,6 +58,14 @@ fi
 # ruby rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [[ -d "$HOME/.rvm/bin" ]] && export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to path
+
+# load profile files from $HOME/.config/shell/profile.d
+if [[ -d "$HOME/.config/shell/profile.d/" ]]; then
+	for profile in $HOME/.config/shell/profile.d/*.sh; do
+		test -r "$profile" && . "$profile"
+	done
+	unset profile
+fi
 
 # startx on tty1
 if [[ -z "$DISPLAY" ]] && [[ $(tty) = /dev/tty1 ]]; then
