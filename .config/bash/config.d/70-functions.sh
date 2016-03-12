@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ## ek9/dotfiles - https://github.com/ek9/dotfiles
-## 20-functions.sh
+## 70-functions.sh
 ## Useful bash functions for cli use
 function eachdir() {
   for dir in $PWD/*

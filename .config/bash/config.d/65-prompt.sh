@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ## ek9/dotfiles - https://github.com/ek9/dotfiles
-## 15-prompt.sh
+## 65-prompt.sh
 ## bash prompt customization (liquitprompt + ohmygit)
 
 LIQUIDPROMPT_DIR=$HOME/.config/mr/repo.d/liquidprompt

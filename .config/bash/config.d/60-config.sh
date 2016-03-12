@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ## ek9/dotfiles - https://github.com/ek9/dotfiles
-## 10-config.sh
+## 60-config.sh
 ## bash shell customization
 
 ### options {{{

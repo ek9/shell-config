@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ## ek9/dotfiles - https://github.com/ek9/dotfiles
-## 30-aliases.sh
+## 75-aliases.sh
 ## bash aliases
 
 # general

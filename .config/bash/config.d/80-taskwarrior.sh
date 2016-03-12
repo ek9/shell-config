@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 ## ek9/dotfiles - https://github.com/ek9/dotfiles
-## 32-taskwarrior.sh
+## 80-taskwarrior.sh
 ## Taskwarrior aliases / functions
 tickle() {
     if [[ "$1" =~ ^-?[0-9]+$ ]]; then
