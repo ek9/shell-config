@@ -2,9 +2,13 @@
 ## ek9/dotfiles - https://github.com/ek9/dotfiles
 ## 23-ruby-rvm.sh
 ## source RVM if it is installed
-if [[ -f "$HOME/.rvm/scripts/rvm" ]]; then
-    source "$HOME/.rvm/scripts/rvm"
+
+if [[ -s "$HOME/.rvm/scripts/rvm" ]]; then
     export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
+    rvm() {
+        command -v foo >/dev/null 2>&1 || source "$HOME/.rvm/scripts/rvm"
+        exec rvm "$@"
+    }
 elif command -v gem >/dev/null; then
 
     # apppend user's gems to PATH if directory exists and it is not yet in PATH
