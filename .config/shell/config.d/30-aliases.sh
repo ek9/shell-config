@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ## ek9/dotfiles - https://github.com/ek9/dotfiles
-## 75-aliases.sh
-## bash aliases
+## 30-aliases.sh
+## shell agnostic aliases
 
 # general
 alias grep='grep --color=always'

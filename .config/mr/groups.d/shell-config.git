@@ -1,14 +1,10 @@
-## ek9/dotfiles - https://github.com/ek9/dotfiles
-## dotfiles.git
-## Setup ek9/dotfiles and dependant repositories
+## ek9/shell-config - https://github.com/ek9/shell-config
+## shell-config.git
+## Setup ek9/shell-config and dependant repositories
 
 # tmux TPM
 [.config/tmux/plugins/tpm]
 checkout = git clone 'https://github.com/tmux-plugins/tpm.git'
-
-# vim vundle
-[.vim/bundle/vundle]
-checkout = git clone 'https://github.com/gmarik/vundle.git' 'vundle'
 
 # dircolors solarized
 [.config/mr/repo.d/dircolors-solarized]
@@ -32,13 +28,7 @@ checkout = git clone file:///srv/git/nomadsys/oh-my-git &&
 	cd oh-my-git &&
     git checkout base
 
-# deploy
-[.config/mr/repo.d/deploy]
-checkout = git clone 'https://github.com/visionmedia/deploy.git' &&
-    cd ~/.local/bin
-    ln -sf ../../.config/mr/repo.d/deploy/bin/deploy .
-
-# dotfiles
-[$HOME/.config/vcsh/repo.d/dotfiles.git]
-checkout = vcsh clone 'https://github.com/ek9/dotfiles dotfiles
+# shell-config
+[$HOME/.config/vcsh/repo.d/shell-config]
+checkout = vcsh clone 'https://github.com/ek9/shell-config shell-config
 
