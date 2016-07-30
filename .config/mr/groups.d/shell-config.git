@@ -2,6 +2,7 @@
 ## shell-config.git
 ## Setup ek9/shell-config and dependant repositories
 
+### DEPENDENCIES - cloned via git
 # tmux TPM
 [.config/tmux/plugins/tpm]
 checkout = git clone 'https://github.com/tmux-plugins/tpm.git'
@@ -28,6 +29,7 @@ checkout = git clone file:///srv/git/nomadsys/oh-my-git &&
 	cd oh-my-git &&
     git checkout base
 
+### MAIN REPOSITORY - cloned via vcsh
 # shell-config
 [$HOME/.config/vcsh/repo.d/shell-config]
 checkout = vcsh clone 'https://github.com/ek9/shell-config shell-config
