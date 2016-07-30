@@ -22,6 +22,7 @@ plugins).
 
 - Enables automatic [tmux][4] start for all shell sessions (tres to attach to
   detached sessions first).
+- Starts [keychain][5] SSH Agent automatically.
 - Sets up [bash][2] shell with [liquidprompt][10] and [oh-my-git][11].
 - Sets up [zsh][3] shell with [antigen][30], [oh-my-zsh][31] and
   [liquidprompt][10] enabled.
@@ -84,6 +85,7 @@ Licensed under [MIT License](LICENSE).
 [2]: https://www.gnu.org/software/bash/
 [3]: http://www.zsh.org/
 [4]: https://github.com/tmux/tmux
+[5]: https://github.com/funtoo/keychain
 [40]: https://github.com/tmux-plugins/tpm
 [41]: https://github.com/ek9/tmux-config
 [42]: https://github.com/ek9/tmux-vim-bindings
