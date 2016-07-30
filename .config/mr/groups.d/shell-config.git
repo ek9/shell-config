@@ -17,17 +17,17 @@ checkout = git clone https://github.com/seebi/dircolors-solarized &&
 [.config/mr/repo.d/base16-shell]
 checkout = git clone 'https://github.com/chriskempson/base16-shell.git'
 
-# liquidprompt
+# liquidprompt - for bash
 [.config/mr/repo.d/liquidprompt]
-checkout = git clone file:///srv/git/nomadsys/liquidprompt &&
-	cd liquidprompt &&
-    git checkout base
+checkout = git clone https://github.com/nojhan/liquidprompt
 
-# oh my git
+# oh-my-git - for bash
 [.config/mr/repo.d/oh-my-git]
-checkout = git clone file:///srv/git/nomadsys/oh-my-git &&
-	cd oh-my-git &&
-    git checkout base
+checkout = git clone https://github.com/arialdomartini/oh-my-git
+
+# antigen
+[.config/mr/repo.d/antigen]
+checkout = git clone https://github.com/zsh-users/antigen.git
 
 ### MAIN REPOSITORY - cloned via vcsh
 # shell-config
