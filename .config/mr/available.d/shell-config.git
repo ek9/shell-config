@@ -8,29 +8,29 @@
 checkout = git clone 'https://github.com/tmux-plugins/tpm.git'
 
 # dircolors solarized
-[.config/vcsh/repo.d/dircolors-solarized]
+[.config/vcsh/repo.d/dircolors-solarized.git]
 checkout = git clone https://github.com/seebi/dircolors-solarized &&
     cd ~/.config
     ln -sf ../.config/vcsh/repo.d/dircolors-solarized/dircolors.256dark dir_colors
 
 # base16 shell
-[.config/vcsh/repo.d/base16-shell]
+[.config/vcsh/repo.d/base16-shell.git]
 checkout = git clone 'https://github.com/chriskempson/base16-shell.git'
 
 # liquidprompt - for bash
-[.config/vcsh/repo.d/liquidprompt]
+[.config/vcsh/repo.d/liquidprompt.git]
 checkout = git clone https://github.com/nojhan/liquidprompt
 
 # oh-my-git - for bash
-[.config/vcsh/repo.d/oh-my-git]
+[.config/vcsh/repo.d/oh-my-git.git]
 checkout = git clone https://github.com/arialdomartini/oh-my-git
 
 # antigen
-[.config/vcsh/repo.d/antigen]
+[.config/vcsh/repo.d/antigen.git]
 checkout = git clone https://github.com/zsh-users/antigen.git
 
 ### MAIN REPOSITORY - cloned via vcsh
 # shell-config
-[$HOME/.config/vcsh/repo.d/shell-config]
+[$HOME/.config/vcsh/repo.d/shell-config.git]
 checkout = vcsh clone 'https://github.com/ek9/shell-config shell-config
 
