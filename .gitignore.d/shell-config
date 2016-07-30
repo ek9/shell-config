@@ -14,8 +14,6 @@
 !/.config/tmux
 !/.config/tmux/plugins
 !/.config/tmux/plugins/.gitkeep
-!/.config/vcsh
-!/.config/vcsh/hooks-enabled
 !/.gemrc
 !/.local
 !/.local/bin
