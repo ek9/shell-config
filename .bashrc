@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-## ek9/dotfiles - https://github.com/ek9/dotfiles
+## ek9/shell-config - https://github.com/ek9/shell-config
 ## .bashrc
-## This file is executed by interactive non-login bash shell
+## This file is executed by interactive (non-)login bash shell
 
 # if not running interactively - don't do anything
 [[ $- != *i* ]] && return
