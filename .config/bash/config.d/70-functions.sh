@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-## ek9/dotfiles - https://github.com/ek9/dotfiles
+## ek9/shell-config - https://github.com/ek9/shell-config
 ## 70-functions.sh
 ## Useful bash functions for cli use
 function eachdir() {

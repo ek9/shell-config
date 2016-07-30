@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-## ek9/dotfiles - https://github.com/ek9/dotfiles
+## ek9/shell-config - https://github.com/ek9/shell-config
 ## 05-force-tmux.sh
 ## force opening tmux - tries attaching to non-attached session first
 if [[ -x $(command -v tmux) ]]; then

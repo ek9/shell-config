@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-## ek9/dotfiles - https://github.com/ek9/dotfiles
+## ek9/shell-config - https://github.com/ek9/shell-config
 ## .bash_profile
 ## This file is executed by an interactive login bash shell
 
