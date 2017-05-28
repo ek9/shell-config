@@ -28,5 +28,5 @@ checkout = git clone 'https://github.com/visionmedia/deploy.git' &&
     ln -sf ../../.config/mr/repo.d/deploy/bin/deploy .
 
 [$HOME/.config/vcsh/repo.d/dotfiles.git]
-checkout = vcsh clone file:///srv/git/nomadsys/dotfiles dotfiles
+checkout = vcsh clone 'https://github.com/ek9/dotfiles dotfiles
 
