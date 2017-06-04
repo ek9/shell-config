@@ -3,6 +3,11 @@
 ## Setup ek9/shell-config and dependant repositories
 
 ### DEPENDENCIES - cloned via git
+# tmux TPM
+[.config/tmux/plugins/tpm]
+checkout = git clone https://github.com/tmux-plugins/tpm &&
+    .config/tmux/plugins/tpm/bin/install_plugins
+
 # dircolors solarized
 [.config/vcsh/repo.d/dircolors-solarized]
 checkout = git clone https://github.com/seebi/dircolors-solarized &&
