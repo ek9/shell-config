@@ -10,11 +10,14 @@ shell-config
 
 ## Install
 
+This repository is compatible with [vcsh-dotfiles][1]. You are advised to have
+`vcsh-dotfiles bootstrap` and `mr update` working.
+
     $ vcsh clone https://github.com/ek9/shell-config
 
-When starting new shell (`bash` or `zsh`), a `tmux` session should start
-automatically. Hit `Ctrl + b` `Shift + I` to install [TPM plugins](#tmux
-plugins).
+When starting new shell (`bash` or `zsh`), a new `tmux` session should start
+automatically. The first time it will start, it will install
+[TPM and tmux plugins](#tmux plugins).
 
 ## Overview
 
@@ -74,7 +77,7 @@ Basic directory structure:
 
 ## Authors
 
-Copyright (c) 2015-2016 ek9 <dev@ek9.co> (https://ek9.co).
+Copyright (c) 2015-2017 ek9 <dev@ek9.co> (https://ek9.co).
 
 ## License
 
