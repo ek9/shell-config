@@ -6,7 +6,7 @@
 # tmux TPM
 [.config/tmux/plugins/tpm]
 checkout = git clone https://github.com/tmux-plugins/tpm &&
-    ./tpm/bin/install_plugins
+    bash ./tpm/bin/install_plugins
 
 # dircolors solarized
 [.config/vcsh/repo.d/dircolors-solarized]
