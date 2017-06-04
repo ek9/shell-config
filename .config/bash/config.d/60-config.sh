@@ -61,6 +61,6 @@ bind '"\e[B": history-search-forward'
 
 ### theme {{{
 # base16-shell theme
-BASE16_SHELL="~/.config/mr/repo.d/base16-shell/base16-default.dark.sh"
+BASE16_SHELL="~/.config/vcsh/repo.d/base16-shell/base16-default.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 # }}}

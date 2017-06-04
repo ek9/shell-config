@@ -3,8 +3,8 @@
 ## 65-prompt.sh
 ## bash prompt customization (liquitprompt + ohmygit)
 
-LIQUIDPROMPT_DIR=$HOME/.config/mr/repo.d/liquidprompt
-OHMYGIT_DIR=$HOME/.config/mr/repo.d/oh-my-git
+LIQUIDPROMPT_DIR=$HOME/.config/vcsh/repo.d/liquidprompt
+OHMYGIT_DIR=$HOME/.config/vcsh/repo.d/oh-my-git
 
 if [[ -f "$LIQUIDPROMPT_DIR/liquidprompt" ]]; then
 

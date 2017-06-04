@@ -6,7 +6,7 @@
 emulate sh -c 'source ~/.config/shell/config.d/*'
 
 # enable antigen
-source .config/mr/repo.d/antigen/antigen.zsh
+source .config/vcsh/repo.d/antigen/antigen.zsh
 
 # source all files in .config/shell/config.d
 source ~/.config/zsh/config.d/*
