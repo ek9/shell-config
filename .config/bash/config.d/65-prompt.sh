@@ -30,11 +30,10 @@ if [[ -f "$LIQUIDPROMPT_DIR/liquidprompt" ]]; then
     fi
 
     if  [[ -f "$OHMYGIT_DIR/prompt.sh" ]]; then
-        omg_liquidprompt=1
         source $OHMYGIT_DIR/prompt.sh
     fi
 
-    LP_ENABLE_OHMYGIT=1
+    LP_PS1_POSTFIX="\n$PS1"
     source "$LIQUIDPROMPT_DIR/liquidprompt"
 fi
 
