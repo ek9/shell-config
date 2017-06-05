@@ -1,6 +1,0 @@
-# disable generation of local documentation to speedup gem install process and
-# insall packages for user instead of system. Reason for this is that system
-# packages are most likely managed by your distributions package manager
-gem: --no-document
-install: --no-document
-update: --no-document
