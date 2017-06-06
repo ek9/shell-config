@@ -19,6 +19,5 @@ export TIGRC_USER="$XDG_CONFIG_HOME"/tig/tigrc
 export WINEPREFIX="$XDG_DATA_HOME"/wine
 export COMPOSER_HOME="$XDG_CONFIG_HOME"/composer
 export COMPOSER_CACHE_DIR="$XDG_CACHE_HOME"/composer
-export VAGRANT_HOME="$HOME/.local/share/vagrant"
 #export XAUTHORITY="$XDG_RUNTIME_DIR"/X11/Xauthority
 
