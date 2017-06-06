@@ -74,7 +74,6 @@ Basic directory structure:
     - Further customizations can be done by providing custom files in any of
       the basic directories in your own repository.
 
-
 ## Authors
 
 Copyright (c) 2015-2017 ek9 <dev@ek9.co> (https://ek9.co).
