@@ -23,6 +23,7 @@
 !/.config/shell/config.d/30-aliases.sh
 !/.config/shell/profile.d
 !/.config/shell/profile.d/015-steam.sh
+~/.config/user-dirs.dirs
 !/.config/zsh
 !/.config/zsh/config.d
 !/.config/zsh/config.d/10-zsh.zsh

@@ -48,7 +48,17 @@ A list of plugins that are enabled in `.tmux.conf`:
 
 ### Directories
 
-Basic directory structure:
+XDG directory structure (changes to defaults via `.config/user-dirs.dirs` file):
+
+- `XDG_DESKTOP_DIR` and `XDG_DOWNLOAD_DIR` set to `$HOME/inbox`.
+- `XDG_DOCUMENTS_DIR` set to `$HOME/life`
+- `XDG_MUSIC_DIR` set to `$HOME/share/music`
+- `XDG_PICTURES_DIR` set to `$HOME/image`
+- `XDG_PUBLICSHARE_DIR` set to `$HOME/share`
+- `XDG_TEMPLATES_DIR` set to `$HOME/.local/share/templates`
+- `XDG_VIDEOS_DIR` set to `$HOME/share/video`
+
+Basic directory structure for shell scripts:
 
 - `.config/bash/config.d` - bash specific `.sh` config scripts (autoloaded)
 - `.config/shell/config.d` - shell agnostic `.sh` config scripts

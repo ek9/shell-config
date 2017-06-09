@@ -26,6 +26,14 @@ checkout = git clone https://github.com/nojhan/liquidprompt
 [.config/vcsh/repo.d/antigen]
 checkout = git clone https://github.com/zsh-users/antigen.git
 
+# ek9/shell-scripts
+[$HOME/.config/vcsh/repo.d/shell-scripts]
+checkout = git clone https://github.com/ek9/shell-scripts &&
+    cd ~/.local/bin/ &&
+    ln -sf ~/.config/vcsh/repo.d/shell-scripts/* . &&
+    rm README.md &&
+    chmod +x ~/.local/bin/*
+
 ### MAIN REPOSITORY - cloned via vcsh
 # shell-config
 [$HOME/.config/vcsh/repo.d/shell-config.git]
