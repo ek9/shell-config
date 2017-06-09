@@ -4,6 +4,8 @@ shell-config
 [shell-config][0] is a personal dotfiles repository for shell ([bash][2],
 [zsh][3] and [tmux][4]). It is compatible with [vcsh-dotfiles][1].
 
+Part of [ek9/dotfiles][10] collection.
+
 ## Requirements
 
 - [vcsh-dotfiles][1]
@@ -87,6 +89,7 @@ Licensed under [MIT License](LICENSE).
 [3]: http://www.zsh.org/
 [4]: https://github.com/tmux/tmux
 [5]: https://github.com/funtoo/keychain
+[10]: https://github.com/ek9/dotfiles
 [40]: https://github.com/tmux-plugins/tpm
 [41]: https://github.com/ek9/tmux-config
 [42]: https://github.com/ek9/tmux-vim-bindings
