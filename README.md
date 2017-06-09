@@ -6,14 +6,13 @@ shell-config
 
 ## Requirements
 
-- [vcsh-dotfiles][1] compatible setup (for hooks and updating)
+- [vcsh-dotfiles][1]
 
 ## Install
 
-This repository is compatible with [vcsh-dotfiles][1]. You are advised to have
-`vcsh-dotfiles bootstrap` and `mr update` working.
+Clone via `vcsh-dotfiles`:
 
-    $ vcsh clone https://github.com/ek9/shell-config
+    $ vcsh-dotfiles clone https://github.com/ek9/shell-config
 
 When starting new shell (`bash` or `zsh`), a new `tmux` session should start
 automatically. The first time it will start, it will install
