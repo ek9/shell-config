@@ -13,3 +13,5 @@ source ~/.config/zsh/config.d/*
 
 # Tell Antigen that you're done.
 antigen apply
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
