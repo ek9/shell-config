@@ -9,3 +9,5 @@
 # always load .bashrc
 [[ -f $HOME/.bashrc ]] && . $HOME/.bashrc
 
+
+[[ -s "$HOME/.local/share/rvm/scripts/rvm" ]] && source "$HOME/.local/share/rvm/scripts/rvm" # Load RVM into a shell session *as a function*

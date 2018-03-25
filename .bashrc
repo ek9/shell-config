@@ -2,7 +2,6 @@
 ## ek9/shell-config - https://github.com/ek9/shell-config
 ## .bashrc
 ## This file is executed by interactive (non-)login bash shell
-
 # if not running interactively - don't do anything
 [[ $- != *i* ]] && return
 
@@ -22,3 +21,6 @@ if test -d "$HOME/.config/bash/config.d/"; then
 	unset bash_config
 fi
 
+[[ -s "$HOME/.local/sharervm/scripts/rvm" ]] && source "$HOME/.local/share/rvm/scripts/rvm"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
