@@ -9,7 +9,8 @@ alias less='less -Xr'
 alias dmesg='dmesg -PHL'
 alias ls='ls --color=auto --group-directories-first --human-readable -x -v'
 alias ll='ls --color=auto --group-directories-first --human-readable -x -v -l'
-
+alias youtube-mp3='youtube-dl -x --audio-format mp3'
+alias youtube-flac='youtube-dl -x --audio-format flac'
 alias IP='dig myip.opendns.com @resolver1.opendns.com +short'
 ip2loc() {
     echo geoiplookup $1 | awk -F' ' '{gsub(/,/,""); print $4}'
