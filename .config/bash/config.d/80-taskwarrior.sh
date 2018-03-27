@@ -2,13 +2,24 @@
 ## ek9/shell-config - https://github.com/ek9/shell-config
 ## 80-taskwarrior.sh
 ## Taskwarrior aliases / functions
+next() {
+    if [[ -z "$1" ]]; then
+        task next
+    elif [[ "$1" =~ ^-?[0-9]+$ ]]; then
+        # first argument is number - modify task
+        task=$1; shift; task "$task" mod gtd:next "$@"
+    else
+        # add new task
+        task add gtd:next "$@"
+    fi
+}
 tickle() {
     if [[ "$1" =~ ^-?[0-9]+$ ]]; then
         # first argument is number - modify task
-         task=$1; shift; due=$1; shift; task $task mod wait:$due gtd:tickler $@
+        task=$1; shift; due=$1; shift; task "$task" mod wait:"$due" gtd:tickler "$@"
     else
         # add new task
-        dl=$1; shift; task add $@ gtd:tickler wait:$dl
+        dl=$1; shift; task add "$@" gtd:tickler wait:"$dl"
     fi
 }
 delay() {
