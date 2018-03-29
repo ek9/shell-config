@@ -10,3 +10,5 @@ if [[ -d "$HOME/.config/shell/profile.d/" ]]; then
 	unset profile
 fi
 
+
+[[ -s "$HOME/.local/share/rvm/scripts/rvm" ]] && source "$HOME/.local/share/rvm/scripts/rvm" # Load RVM into a shell session *as a function*
