@@ -33,5 +33,5 @@
 !/.config/tmux/plugins
 !/.config/tmux/plugins/.gitkeep
 !/.tmux.conf
-!/.tmuxinator
-!/.tmuxinator/.gitkeep
+!/.config/tmuxinator
+!/.config/tmuxinator/.gitkeep
