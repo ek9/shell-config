@@ -49,7 +49,8 @@ LP_HOSTNAME_ALWAYS=0
 
 # Use the fully qualified domain name (FQDN) instead of the short hostname when
 # the hostname is displayed
-LP_ENABLE_FQDN=1
+#LP_ENABLE_FQDN=1
+LP_HOSTNAME_METHOD=fqdn
 
 # Always display the user name, even if the user is the same as the one logged
 # in.
